@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الواجهات السياحية - الموقع السياحي</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>الواجهات السياحية</h1>
+        <a href="index.html">العودة للصفحة الرئيسية</a>
+    </div>
+<div class="slider-container" style="margin-bottom: 20px;">
+    <div class="slide">
+        <img src="images/paris.jpg" alt="">
+    </div>
+</div>
+    <div class="destinations-container">
+
+<div class="card">
+    <img src="images/a.jpg" alt="صورة باريس">
+    <h3>باريس، فرنسا</h3>
+    <p>تتميز بمعالمها التاريخية الرائعة مثل برج إيفل.</p>
+    <h3 >سعر الرحلة:  1500$</h3>
+    <button class="btn btn-primary w-100" onclick="openModal('باريس، فرنسا', 'تعتبر باريس واحدة من أكثر الوجهات سحراً وجذباً في العالم، حيث تدمج بسلاسة مذهلة بين عراقة التاريخ ورقي الحداثة. تتضمن هذه الرحلة الاستثنائية فرصة لزيارة المعالم العالمية الخالدة مثل برج إيفل الشامخ، ومتحف اللوفر العريق، وقصر فرساي الفخم. كما يمكنك الاستمتاع بجولات ساحرة على ضفاف نهر السين، وزيارة المقاهي الباريسية التقليدية وتذوق أشهى المخبوزات والحلويات الفرنسية. سعر الرحلة الشامل (طيران + إقامة + جولات سياحية): 1500$')">تفاصيل الرحلة</button>
+</div>
+      <div class="card">
+    <img src="images/b.jpg" alt="صورة لندن">
+    <h3>لندن، بريطانيا</h3>
+    <p>مزيج مذهل بين التاريخ العريق والحداثة.</p>
+    <h3>سعر الرحلة: 1800$</h3>
+    <button class="btn btn-primary w-100" onclick="openModal('لندن، بريطانيا', 'استعد لخوض تجربة فريدة في قلب المملكة المتحدة! تمتاز لندن بتنوعها الثقافي الهائل ومعالمها المعمارية التي تجمع بين عبق الماضي العريق وحداثة القرن الحادي والعشرين. تشمل الرحلة زيارة ساعة بيج بن الشهيرة، وجسر لندن المعلق، وقصر باكنغهام مقر العائلة المالكة. بالإضافة إلى التسوق في أشهر الشوارع التجارية العريقة، وزيارة المتاحف المجانية العالمية التي تحتضن أندر قطع التاريخ الإنساني. سعر الرحلة الشامل (طيران + إقامة + جولات سياحية): 1800$')">تفاصيل الرحلة</button>
+      </div>
+        
+
+        
+      <div class="card">
+    <img src="images/c.jpg" alt="صورة أمستردام">
+    <h3>أمستردام، هولندا</h3>
+    <p>تتميز بالقنوات المائية الجميلة والأجواء الهادئة.</p>
+    <h3>سعر الرحلة: 1200$</h3>
+    <button class="btn btn-primary w-100" onclick="openModal('أمستردام، هولندا', 'في أمستردام، المدينة التي تتألق بقنواتها المائية الخلابة وجسورها التاريخية التي تبعث على الاسترخاء والهدوء. تتيح لك هذه الرحلة استكشاف المدينة على طريقة أهلها عبر تأجير الدراجات الهوائية، وزيارة حديقة كوكينهوف الخلابة ومتحف فان غوغ العالمي. تتميز الرحلة بأجواء شبابية وعائلية ممتعة تناسب كل من يبحث عن الاستجمام والطبيعة الساحرة. سعر الرحلة الشامل (طيران + إقامة + جولات سياحية): 1200$')">تفاصيل الرحلة</button>
+      </div>
+
+<div id="myModal" class="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+    <div class="modal-content" style="background-color:#666; margin:15% auto; padding:20px; width:50%; border-radius:50px; text-align:right;">
+        <span class="close-btn" onclick="closeModal()" style="float:left; cursor:pointer; font-size:22px; font-weight:bold;">&times;</span>
+        <h2 id="modal-title">عنوان الوجهة</h2>
+        <p id="modal-desc"></p>
+    </div>
+</div>
+
+
+<script>
+    function openModal(title, desc) {
+        document.getElementById("modal-title").innerText = title;
+        document.getElementById("modal-desc").innerText = desc;
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
+</body>
+</html>
